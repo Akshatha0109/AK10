@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #eae8e6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: teal;
+  }
+
+  nav a.active::after,
+  nav a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: teal;
+    bottom: -3px;
+    left: 0;
+  }
+    .resume-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .resume-title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .resume-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: teal;
+      margin: 10px auto;
+    }
+
+    .resume-subtitle {
+      text-align: center;
+      color: gray;
+      margin-bottom: 40px;
+    }
+
+    .resume-content {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .resume-column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .resume-box {
+      margin-bottom: 40px;
+      position: relative;
+      padding-left: 25px;
+      border-left: 2px solid teal;
+    }
+
+    .resume-box::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 5px;
+      width: 14px;
+      height: 14px;
+      background: white;
+      border: 2px solid teal;
+      border-radius: 50%;
+    }
+
+    .resume-box h3 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .resume-box h4 {
+      font-size: 16px;
+      color: teal;
+      margin: 5px 0;
+    }
+
+    .resume-box p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .resume-box ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .resume-box ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AKSHATHA</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html"class="active">Resume</a>
+    <a href="services.html">Services</a>
+    <a href="project.html">Project</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="resume-section">
+  <h2 class="resume-title">Resume</h2>
+  <p class="resume-subtitle">I am a passionate BCA student focused on web development, UI/UX design, and continuous learning in the tech field.</p>
+
+  <div class="resume-content">
+    <div class="resume-column">
+      <div class="resume-box">
+        <h3>Summary</h3>
+        <h4>R.S.A AKSHATHA</h4>
+        <p><i>Dedicated BCA student with a strong interest in software development and emerging technologies. Passionate about coding, problem-solving, and building real-world digital solutions.</i></p>
+        <ul>
+          <li>Tamilnadu</li>
+          <li>6374424590</li>
+          <li>akshathamoni3@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="resume-box">
+        <h3>Education</h3>
+        <h4>SSC</h4>
+        <p><strong>2020 - 2021</strong></p>
+        <p><i>St.Pauls Matric Hr.Sec School</i></p>
+        <p>I Scored 75 percentage in my EXamination.</p>
+        <h4>HSC+1</h4>
+        <p><strong>2021 - 2022</strong></p>
+        <p><i>St.Pauls Matric Hr.Sec School</i></p>
+        <p>I Scored 70 percentage in my EXamination.</p>
+         <h4>HSC+2</h4>
+        <p><strong>2022 - 2023</strong></p>
+        <p><i>St.Pauls Matric Hr.Sec School</i></p>
+        <p>I Scored 80 percentage in my EXamination.</p>
+      </div>
+    </div>
+    <div class="resume-column">
+      <div class="resume-box">
+        <h3>BACHELOR'S</h3>
+        <h4>MARUDHAR KESARI JAIN COLLEGE FOR WOEMS</h4>
+        <p><strong>2023 - Present</strong></p>
+        <p>I am currently pursuing a Bachelor of Computer Applications (BCA) and have maintained strong academic performance with an overall score of 90%. I am passionate about software development, web technologies, and continuously expanding my technical skills through hands-on projects and learning.</p>
+      </div>
+
+      <div class="resume-box">
+        <h4>SKILLS</h4>
+        <ul>
+    <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript</li>
+    <li><strong>Back-End:</strong> C++, C , MongoDB, MySQL</li>
+    <li><strong>Tools:</strong> Git, GitHub, VS Code, Postman</li>
+    <li><strong>Design:</strong> UI/UX Design, Figma</li>
+    <li><strong>Programming:</strong> Python, Java (Basics)</li>
+    <li><strong>Other:</strong> MS Office, Responsive Web Design</li>
+    <li><strong>Soft Skills:</strong> Communication, Problem-Solving, Time Management</li>
+        </ul>
+         <h4>LANGUAGES</h4>
+      <ul>
+        <li>English</li>
+        <li>Tamil</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+    <h4>DECLARATION</h4>
+    <p>I hereby declare that all the information furnished above is true and correct
+ to the best of my knowledge and belief.</p>
+  <h4>SIGNATURE</h4>
+   <h6>R.S.A AKSHATHA</h6>
+</section>
+
+</body>
+</html>

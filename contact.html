@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #eae8e6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: teal;
+  }
+
+  nav a.active::after,
+  nav a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: teal;
+    bottom: -3px;
+    left: 0;
+  }
+    .contact-section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .contact-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: teal;
+      margin: 10px auto;
+    }
+
+    .contact-subtitle {
+      text-align: center;
+      color: gray;
+      margin-bottom: 40px;
+    }
+
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      background: #fff;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1;
+      background: #f1e8d6;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .contact-info div {
+      margin-bottom: 25px;
+    }
+    .icon-circle {
+      background-color: #e6f8f8;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+    }
+
+    .icon-circle i {
+      font-size: 20px;
+      color: teal;
+    }
+
+
+    .contact-info h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form .half {
+      width: 48%;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-form button {
+      background-color: teal;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #007777;
+    }
+
+    @media (max-width: 768px) {
+      .contact-form .half {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AKSHATHA</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="services.html">Services</a>
+    <a href="project.html">Project</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html"class="active">Contact</a>
+  </nav>
+</header>
+
+<section class="contact-section">
+  <h2 class="contact-title">Contact</h2>
+  <p class="contact-subtitle">I am a passionate BCA student focused on web development, UI/UX design, and continuous learning in the tech field.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div>
+        <h4>Address</h4>
+         <i class="fas fa-map-marker-alt"></i>
+        <p>105/26 S.Kodiyur,Jolarpet,Tirupattur,Tamilnadu.</p>
+      </div>
+      <div>
+        <h4 class="phone">Phone no</h4>
+        <i class="fas fa-phone-alt" style="color: white;"></i>
+        <p>6374424590</p>
+      </div>
+      <div>
+        <h4 class="email">Email Us</h4>
+        <i class="fas fa-envelope"></i>
+        <p>akshathamoni3.com</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" class="half" placeholder="Your Name" required>
+        <input type="email" class="half" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #eae8e6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: teal;
+  }
+
+  nav a.active::after,
+  nav a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: teal;
+    bottom: -3px;
+    left: 0;
+  }
+
+    .projects-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .projects-section p {
+      color: gray;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      background-color: #fff;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-body h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #2aa394;
+    }
+
+    .meta {
+      font-size: 13px;
+      color: gray;
+    }
+
+    .card-body p {
+      font-size: 14px;
+      margin: 10px 0 15px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .btn {
+      text-decoration: none;
+      background-color: #2aa394;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 5px;
+      font-size: 13px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #248b7f;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AKSHATHA</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="services.html">Services</a>
+    <a href="project.html"class="active">Project</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <h2>Our Projects</h2>
+    <p>A showcase of our work deployed on GitHub and Netlify</p>
+
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="card">
+        <img src="pexels-designecologist-1779487.jpg" alt="Project 1">
+        <div class="card-body">
+          <div class="meta">June 12, 2025 • Admin</div>
+          <h3>HTML Task 1</h3>
+          <p> This is a basic HTML registration form that allows users to input personal details such as name, email, password, and phone number.</p>
+          <div class="btn-group">
+            <a href="https://github.com/Akshatha0109/Ak8.git" class="btn">GitHub</a>
+            <a href="https://akshatha-t8.netlify.app/" class="btn">Netlify</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <img src="pexels-mikhail-nilov-7583935.jpg" alt="Project 2">
+        <div class="card-body">
+          <div class="meta">June 16, 2025 • Admin</div>
+          <h3>HTML Task 2</h3>
+          <p>The form is beginner-friendly and can be extended with CSS for styling for validation.</p>
+          <div class="btn-group">
+            <a href="https://github.com/Akshatha0109/AK7.git" class="btn">GitHub</a>
+            <a href="https://akshatha-t7.netlify.app/" class="btn">Netlify</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <img src="pexels-tranmautritam-326501.jpg" alt="Project 3">
+        <div class="card-body">
+          <div class="meta">June 19, 2025 • Admin</div>
+          <h3>HTML Task 3</h3>
+          <p> This website is built using HTML, providing a structured layout with multiple sections like Home, About, and Contact.</p>
+          <div class="btn-group">
+            <a href="https://github.com/Akshatha0109/Ak-3.git" class="btn">GitHub</a>
+            <a href="https://akshatha-t3.netlify.app/" class="btn">Netlify</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card">
+        <img src="pexels-uixshubh-32888835.jpg" alt="Project 4">
+        <div class="card-body">
+          <div class="meta">June 22, 2025 • Admin</div>
+          <h3>HTML Task 4</h3>
+          <p> This HTML-based website features a well-organized layout, including key sections like Home, About, and Contact for smooth navigation.</p>
+          <div class="btn-group">
+            <a href="https://github.com/Akshatha0109/AK5.git" class="btn">GitHub</a>
+            <a href="https://akshatha-t5.netlify.app/" class="btn">Netlify</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="card">
+        <img src="pexels-xexusdesigner-777001.jpg" alt="Project 5">
+        <div class="card-body">
+          <div class="meta">June 25, 2025 • Admin</div>
+          <h3>Responsive Portfolio</h3>
+          <p>A complete personal portfolio website with responsive design and smooth scrolling.</p>
+          <div class="btn-group">
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn">Netlify</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

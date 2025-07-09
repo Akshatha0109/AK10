@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #eae8e6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+  }
+
+  nav a.active,
+  nav a:hover {
+    color: teal;
+  }
+
+  nav a.active::after,
+  nav a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: teal;
+    bottom: -3px;
+    left: 0;
+  }
+
+    /* ==== ABOUT SECTION ==== */
+    .about-section {
+      padding: 60px 100px;
+    }
+
+    .about-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .about-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .about-content {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .about-content img {
+      max-width: 300px;
+      border-radius: 10px;
+      height: 350px;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .info-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .info-item {
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    .info-item strong {
+      display: inline-block;
+      width: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .about-content {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AKSHATHA</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html"class="active">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="services.html">Services</a>
+    <a href="project.html">Project</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+  <section class="about-section">
+    <div class="about-title">About</div>
+    <div class="about-subtitle">
+      I am a passionate BCA student focused on web development, UI/UX design, and continuous learning in the tech field.
+    </div>
+    <div class="about-content">
+      <img src="profile-img.jpg" alt="Profile Image">
+      <div class="about-text">
+        <h2>UI/UX Designer & Web Developer.</h2>
+        <p><em>Dedicated BCA student with a strong interest in software development and emerging technologies. Passionate about coding, problem-solving, and building real-world digital solutions.</em></p>
+        <div class="info-row">
+          <div class="info-item"><strong>Birthday:</strong> 9 January 2006</div>
+          <div class="info-item"><strong>Age:</strong> 19</div>
+          <div class="info-item"><strong>Phone:</strong> 6374424590</div>
+          <div class="info-item"><strong>Degree:</strong> Bachelor</div>
+          <div class="info-item"><strong>State:</strong> Tamilnadu</div>
+          <div class="info-item"><strong>Email:</strong> akshathamoni3@gmail.com</div>
+        </div>
+        <p>
+          I am currently pursuing a Bachelor of Computer Applications (BCA), with a strong interest in software development and technology. I am passionate about learning new programming languages, developing web and mobile applications, and continuously enhancing my skills through practical projects and internships. I aim to build a successful career in the IT industry by combining technical knowledge with innovative thinking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
